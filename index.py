@@ -10,7 +10,14 @@ def soustraction(a,b):
 
 
 def division(a,b):
-    return a / b
+    try:
+        return a/b
+    except ZeroDivisionError:
+        return "You can't divide by zero!"
+
+
+def multiplication(a,b):
+    return a  *  b
 
 
 print(addition(5,5))
@@ -21,3 +28,6 @@ print(soustraction(10,2))
 print('------------------------------------------')
 print('Division')
 print(division(100,2))
+print('------------------------------------------')
+print('Multiplication')
+print(division(10,2))
