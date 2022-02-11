@@ -19,6 +19,8 @@ def division(a,b):
 def multiplication(a,b):
     return a  *  b
 
+def hello():
+    print("hello world")
 
 print(addition(5,5))
 
@@ -31,3 +33,6 @@ print(division(100,2))
 print('------------------------------------------')
 print('Multiplication')
 print(division(10,2))
+
+
+hello()
