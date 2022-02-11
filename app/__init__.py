@@ -2,12 +2,12 @@
 
 # FLASK IMPORT
 from flask import Flask
-from flask_restful import  Api
 from flask_sqlalchemy import SQLAlchemy
+from flask_restful import Resource, Api
 
 
 #PERSONNAL IMPORT
-from .controller.user import User
+
 
 
 database = SQLAlchemy()
@@ -19,6 +19,6 @@ def create_app():
    
     database.init_app(app)
     
-    
-    api.add_resource(User, '/')
+
+        
     return app
