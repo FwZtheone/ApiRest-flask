@@ -3,7 +3,11 @@ def addition(a,b):
     return a + b
 
 def soustraction(a,b):
-    return a - b
+    if b > a:
+        return "on ne peut pas avoir un nombre négatif"
+    else:
+        return a - b
+
 
 
 
